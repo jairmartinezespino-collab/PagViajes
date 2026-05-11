@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja Más, Gasta Menos | Tu Guía de Viajes Low-Cost</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Sección Principal (Hero) -->
+    <header class="hero">
+        <nav>
+            <div class="logo">TravelMexico.com</div>
+            <ul class="nav-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#destinos">LogIn</a></li>
+                <li><a href="#herramientas">No se</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Riviera Maya</h1>
+            <p>Low price, personalized attention, customer service staff in Mexico</p>
+
+            <!-- Nueva Barra de Selección de Fechas -->
+            <div class="search-container">
+                <div class="date-input-group">
+                    <label for="checkin">Depart</label>
+                    <input type="date" id="checkin" name="checkin" max="2030-12-31">
+                </div>
+                <div class="date-input-group">
+                    <label for="checkout">Return</label>
+                    <input type="date" id="checkout" name="checkout" max="2030-12-31">
+                </div>
+                <button class="cta-button-search">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Propuesta de Valor -->
+    <section id="metodo" class="features">
+        <h2>El Arte de Viajar Barato</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>✈️ Vuelos Estratégicos</h3>
+                <p>Domina los buscadores, aprovecha los errores de tarifas de las aerolíneas y descubre las fechas
+                    exactas donde los boletos desploman sus precios.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛏️ Alojamiento Inteligente</h3>
+                <p>Olvídate de pagar de más por un hotel. Te enseñamos a encontrar hostales de primer nivel, hacer
+                    voluntariados o usar plataformas de intercambio de casas.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🗺️ Rutas Locales</h3>
+                <p>Come delicioso en los mercados locales, domina el transporte público de cualquier ciudad y encuentra
+                    los mejores tours y actividades 100% gratuitas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="presupuesto-container">
+    <div class="calculator-card">
+        <div class="card-header">
+            <span class="icon">💰</span>
+            <h2>Calculate your daily budget</h2>
+        </div>
+        
+        <div class="input-group">
+            <label for="totalBudget">Total budget</label>
+            <div class="input-wrapper">
+                <span class="currency">$</span>
+                <input type="number" id="totalBudget" placeholder="1000">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="totalDays">Días de viaje</label>
+            <div class="input-wrapper">
+                <span class="unit">📅</span>
+                <input type="number" id="totalDays" placeholder="10">
+            </div>
+        </div>
+
+        <button onclick="calcularDiario()" class="calc-btn">
+            <span>Calcular</span>
+            <div class="btn-hover-effect"></div>
+        </button>
+
+        <div id="resultado" class="result-display"></div>
+    </div>
+</section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2026 traveltomexico.com. Todos los derechos reservados/All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
